@@ -1,0 +1,38 @@
+name: Publish @doodle-ui/theme
+
+# Publishes the theme package to npm when you push a tag like `theme-v0.1.0`,
+# or when triggered manually from the Actions tab.
+#
+# Requires a repository secret `NPM_TOKEN` — a granular npm access token with
+# read/write on the `@doodle-ui` scope and "bypass 2FA" enabled.
+
+on:
+  push:
+    tags:
+      - "theme-v*"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Validate package
+        working-directory: packages/theme
+        run: pnpm run build
+
+      - name: Publish to npm
+        working-directory: packages/theme
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
