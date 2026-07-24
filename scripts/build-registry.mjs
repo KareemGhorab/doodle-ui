@@ -22,7 +22,7 @@ const hooksDir = join(registryRoot, "hooks");
 const libDir = join(registryRoot, "lib");
 const blocksDir = join(registryRoot, "blocks");
 
-const THEME_PKG = "@kareem-ghorab/theme";
+const THEME_PKG = "@kareem-hany/theme";
 
 // Bare specifiers we never want to list as installable deps.
 const IGNORE_DEPS = new Set(["react", "react-dom", "next"]);
@@ -137,7 +137,7 @@ items.push({
   dependencies: [THEME_PKG],
   cssVars: { light, dark },
   css: {
-    "@import": "@kareem-ghorab/theme/styles.css",
+    "@import": "@kareem-hany/theme/styles.css",
   },
 });
 

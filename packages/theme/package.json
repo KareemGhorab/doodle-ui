@@ -1,5 +1,5 @@
 {
-  "name": "@kareem-ghorab/theme",
+  "name": "@kareem-hany/theme",
   "version": "0.1.0",
   "description": "Childish, hand-drawn design tokens for Doodle UI: light/dark CSS variables, Neucha + Cabin Sketch fonts, and the signature blob border-radius system for shadcn/ui.",
   "keywords": [
@@ -17,7 +17,7 @@
     "directory": "packages/theme"
   },
   "license": "MIT",
-  "author": "Kareem Ghorab",
+  "author": "Kareem Hany",
   "type": "module",
   "sideEffects": [
     "*.css"

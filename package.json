@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "pnpm --filter @doodle-ui/www dev",
     "build": "pnpm --filter @doodle-ui/www build",
-    "build:theme": "pnpm --filter @kareem-ghorab/theme build",
+    "build:theme": "pnpm --filter @kareem-hany/theme build",
     "registry:build": "pnpm --filter @doodle-ui/www registry:build",
     "lint": "pnpm --filter @doodle-ui/www lint"
   },

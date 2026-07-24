@@ -1,10 +1,10 @@
-name: Publish @kareem-ghorab/theme
+name: Publish @kareem-hany/theme
 
 # Publishes the theme package to npm when you push a tag like `theme-v0.1.0`,
 # or when triggered manually from the Actions tab.
 #
 # Requires a repository secret `NPM_TOKEN` — a granular npm access token with
-# read/write on the `@kareem-ghorab` scope and "bypass 2FA" enabled.
+# read/write on the `@kareem-hany` scope and "bypass 2FA" enabled.
 
 on:
   push:

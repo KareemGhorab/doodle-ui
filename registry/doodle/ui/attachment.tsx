@@ -1,6 +1,6 @@
-import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { Slot } from "radix-ui"
+import * as React from "react"
 
 import { cn } from "@/registry/doodle/lib/utils"
 import { Button } from "@/registry/doodle/ui/button"
@@ -192,13 +192,7 @@ function AttachmentGroup({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 export {
-  Attachment,
-  AttachmentGroup,
-  AttachmentMedia,
-  AttachmentContent,
-  AttachmentTitle,
-  AttachmentDescription,
-  AttachmentActions,
-  AttachmentAction,
-  AttachmentTrigger,
+    Attachment, AttachmentAction, AttachmentActions, AttachmentContent, AttachmentDescription, AttachmentGroup,
+    AttachmentMedia, AttachmentTitle, AttachmentTrigger
 }
+

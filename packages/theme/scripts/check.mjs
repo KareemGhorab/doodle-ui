@@ -14,7 +14,7 @@ let ok = true;
 for (const rel of required) {
   const abs = resolve(root, rel);
   if (!existsSync(abs)) {
-    console.error(`[@kareem-ghorab/theme] missing required file: ${rel}`);
+    console.error(`[@kareem-hany/theme] missing required file: ${rel}`);
     ok = false;
   }
 }
@@ -23,4 +23,4 @@ if (!ok) {
   process.exit(1);
 }
 
-console.log("[@kareem-ghorab/theme] ok — CSS entry files present.");
+console.log("[@kareem-hany/theme] ok — CSS entry files present.");

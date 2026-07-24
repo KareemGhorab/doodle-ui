@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     root: monorepoRoot,
   },
   outputFileTracingRoot: monorepoRoot,
-  transpilePackages: ["@kareem-ghorab/theme"],
+  transpilePackages: ["@kareem-hany/theme"],
 };
 
 export default nextConfig;

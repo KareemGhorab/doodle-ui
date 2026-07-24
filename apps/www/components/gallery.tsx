@@ -3,6 +3,7 @@
 import { Bell, Check, ChevronsUpDown } from "lucide-react";
 import * as React from "react";
 
+import { ChatGallery } from "@/components/chat-gallery";
 import {
     Accordion,
     AccordionContent,
@@ -48,7 +49,6 @@ import { Input } from "@/registry/doodle/ui/input";
 import { Label } from "@/registry/doodle/ui/label";
 import { Progress } from "@/registry/doodle/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/registry/doodle/ui/radio-group";
-import { ChatGallery } from "@/components/chat-gallery";
 import {
     Select,
     SelectContent,

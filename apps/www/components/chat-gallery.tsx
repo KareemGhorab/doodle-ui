@@ -3,41 +3,41 @@
 import { FileText, Sparkles } from "lucide-react";
 
 import {
-  Attachment,
-  AttachmentContent,
-  AttachmentDescription,
-  AttachmentMedia,
-  AttachmentTitle,
+    Attachment,
+    AttachmentContent,
+    AttachmentDescription,
+    AttachmentMedia,
+    AttachmentTitle,
 } from "@/registry/doodle/ui/attachment";
 import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
 } from "@/registry/doodle/ui/avatar";
 import {
-  Bubble,
-  BubbleContent,
-  BubbleReactions,
+    Bubble,
+    BubbleContent,
+    BubbleReactions,
 } from "@/registry/doodle/ui/bubble";
 import {
-  Marker,
-  MarkerContent,
-  MarkerIcon,
+    Marker,
+    MarkerContent,
+    MarkerIcon,
 } from "@/registry/doodle/ui/marker";
 import {
-  Message,
-  MessageAvatar,
-  MessageContent,
-  MessageFooter,
-  MessageHeader,
+    Message,
+    MessageAvatar,
+    MessageContent,
+    MessageFooter,
+    MessageHeader,
 } from "@/registry/doodle/ui/message";
 import {
-  MessageScroller,
-  MessageScrollerButton,
-  MessageScrollerContent,
-  MessageScrollerItem,
-  MessageScrollerProvider,
-  MessageScrollerViewport,
+    MessageScroller,
+    MessageScrollerButton,
+    MessageScrollerContent,
+    MessageScrollerItem,
+    MessageScrollerProvider,
+    MessageScrollerViewport,
 } from "@/registry/doodle/ui/message-scroller";
 
 /**

@@ -1,4 +1,4 @@
-# @kareem-ghorab/theme
+# @kareem-hany/theme
 
 Childish, hand-drawn design tokens for [Doodle UI](https://github.com/KareemGhorab/doodle-ui) — a themed fork of [shadcn/ui](https://ui.shadcn.com).
 
@@ -14,7 +14,7 @@ The actual components are distributed separately via the `@doodle-ui` shadcn reg
 ## Install
 
 ```bash
-npm i @kareem-ghorab/theme
+npm i @kareem-hany/theme
 ```
 
 ## Usage (Tailwind CSS v4)
@@ -23,7 +23,7 @@ Import the stylesheet once in your global CSS, after Tailwind:
 
 ```css
 @import "tailwindcss";
-@import "@kareem-ghorab/theme/styles.css";
+@import "@kareem-hany/theme/styles.css";
 ```
 
 That gives you:
@@ -47,8 +47,8 @@ Tokens use the standard shadcn class strategy. Toggle by putting `dark` on `<htm
 If you are not on Tailwind v4, import just the raw variables:
 
 ```css
-@import "@kareem-ghorab/theme/tokens.css";
-@import "@kareem-ghorab/theme/fonts.css";
+@import "@kareem-hany/theme/tokens.css";
+@import "@kareem-hany/theme/fonts.css";
 ```
 
 Then reference `var(--primary)`, `var(--doodle-radius-card)`, and friends directly.

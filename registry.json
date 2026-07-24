@@ -9,7 +9,7 @@
       "title": "Doodle",
       "description": "The Doodle UI base style: childish, hand-drawn theme with light and dark tokens, Neucha + Cabin Sketch fonts, and the signature blob border-radius system.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "cssVars": {
         "light": {
@@ -57,7 +57,7 @@
         }
       },
       "css": {
-        "@import": "@kareem-ghorab/theme/styles.css"
+        "@import": "@kareem-hany/theme/styles.css"
       }
     },
     {
@@ -76,7 +76,7 @@
       "type": "registry:hook",
       "title": "Use Mobile",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -91,7 +91,7 @@
       "title": "Accordion",
       "description": "Accordion component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -108,7 +108,7 @@
       "title": "Alert Dialog",
       "description": "Alert Dialog component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "registryDependencies": [
@@ -127,7 +127,7 @@
       "title": "Alert",
       "description": "Alert component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority"
       ],
       "files": [
@@ -143,7 +143,7 @@
       "title": "Aspect Ratio",
       "description": "Aspect Ratio component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -159,7 +159,7 @@
       "title": "Attachment",
       "description": "Attachment component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -179,7 +179,7 @@
       "title": "Avatar",
       "description": "Avatar component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -195,7 +195,7 @@
       "title": "Badge",
       "description": "Badge component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -212,7 +212,7 @@
       "title": "Breadcrumb",
       "description": "Breadcrumb component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -229,7 +229,7 @@
       "title": "Bubble",
       "description": "Bubble component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -246,7 +246,7 @@
       "title": "Button Group",
       "description": "Button Group component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -266,7 +266,7 @@
       "title": "Button",
       "description": "Button component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -283,7 +283,7 @@
       "title": "Calendar",
       "description": "Calendar component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "react-day-picker"
       ],
@@ -303,7 +303,7 @@
       "title": "Card",
       "description": "Card component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -318,7 +318,7 @@
       "title": "Carousel",
       "description": "Carousel component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "embla-carousel-react",
         "lucide-react"
       ],
@@ -338,7 +338,7 @@
       "title": "Chart",
       "description": "Chart component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "recharts"
       ],
       "files": [
@@ -354,7 +354,7 @@
       "title": "Checkbox",
       "description": "Checkbox component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -371,7 +371,7 @@
       "title": "Collapsible",
       "description": "Collapsible component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -388,7 +388,7 @@
       "description": "Combobox component, restyled with the Doodle UI theme.",
       "dependencies": [
         "@base-ui/react",
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -408,7 +408,7 @@
       "title": "Command",
       "description": "Command component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "cmdk",
         "lucide-react"
       ],
@@ -428,7 +428,7 @@
       "title": "Context Menu",
       "description": "Context Menu component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -445,7 +445,7 @@
       "title": "Dialog",
       "description": "Dialog component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -465,7 +465,7 @@
       "title": "Direction",
       "description": "Direction component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -481,7 +481,7 @@
       "title": "Drawer",
       "description": "Drawer component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "vaul"
       ],
       "files": [
@@ -497,7 +497,7 @@
       "title": "Dropdown Menu",
       "description": "Dropdown Menu component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -514,7 +514,7 @@
       "title": "Empty",
       "description": "Empty component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority"
       ],
       "files": [
@@ -530,7 +530,7 @@
       "title": "Field",
       "description": "Field component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority"
       ],
       "registryDependencies": [
@@ -550,7 +550,7 @@
       "title": "Form",
       "description": "Form component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui",
         "react-hook-form"
       ],
@@ -570,7 +570,7 @@
       "title": "Hover Card",
       "description": "Hover Card component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -586,7 +586,7 @@
       "title": "Input Group",
       "description": "Input Group component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority"
       ],
       "registryDependencies": [
@@ -607,7 +607,7 @@
       "title": "Input Otp",
       "description": "Input Otp component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "input-otp",
         "lucide-react"
       ],
@@ -624,7 +624,7 @@
       "title": "Input",
       "description": "Input component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -639,7 +639,7 @@
       "title": "Item",
       "description": "Item component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -659,7 +659,7 @@
       "title": "Kbd",
       "description": "Kbd component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -674,7 +674,7 @@
       "title": "Label",
       "description": "Label component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -690,7 +690,7 @@
       "title": "Marker",
       "description": "Marker component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -707,7 +707,7 @@
       "title": "Menubar",
       "description": "Menubar component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -724,7 +724,7 @@
       "title": "Message Scroller",
       "description": "Message Scroller component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "@shadcn/react",
         "lucide-react"
       ],
@@ -744,7 +744,7 @@
       "title": "Message",
       "description": "Message component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -759,7 +759,7 @@
       "title": "Native Select",
       "description": "Native Select component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react"
       ],
       "files": [
@@ -775,7 +775,7 @@
       "title": "Navigation Menu",
       "description": "Navigation Menu component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "lucide-react",
         "radix-ui"
@@ -793,7 +793,7 @@
       "title": "Pagination",
       "description": "Pagination component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -812,7 +812,7 @@
       "title": "Popover",
       "description": "Popover component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -828,7 +828,7 @@
       "title": "Progress",
       "description": "Progress component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -844,7 +844,7 @@
       "title": "Radio Group",
       "description": "Radio Group component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -861,7 +861,7 @@
       "title": "Resizable",
       "description": "Resizable component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "react-resizable-panels"
       ],
@@ -878,7 +878,7 @@
       "title": "Scroll Area",
       "description": "Scroll Area component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -894,7 +894,7 @@
       "title": "Select",
       "description": "Select component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -911,7 +911,7 @@
       "title": "Separator",
       "description": "Separator component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -927,7 +927,7 @@
       "title": "Sheet",
       "description": "Sheet component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "radix-ui"
       ],
@@ -944,7 +944,7 @@
       "title": "Sidebar",
       "description": "Sidebar component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "lucide-react",
         "radix-ui"
@@ -971,7 +971,7 @@
       "title": "Skeleton",
       "description": "Skeleton component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -986,7 +986,7 @@
       "title": "Slider",
       "description": "Slider component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -1002,7 +1002,7 @@
       "title": "Sonner",
       "description": "Sonner component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react",
         "next-themes",
         "sonner"
@@ -1020,7 +1020,7 @@
       "title": "Spinner",
       "description": "Spinner component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react"
       ],
       "files": [
@@ -1036,7 +1036,7 @@
       "title": "Switch",
       "description": "Switch component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -1052,7 +1052,7 @@
       "title": "Table",
       "description": "Table component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -1067,7 +1067,7 @@
       "title": "Tabs",
       "description": "Tabs component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -1084,7 +1084,7 @@
       "title": "Textarea",
       "description": "Textarea component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme"
+        "@kareem-hany/theme"
       ],
       "files": [
         {
@@ -1099,7 +1099,7 @@
       "title": "Toggle Group",
       "description": "Toggle Group component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -1119,7 +1119,7 @@
       "title": "Toggle",
       "description": "Toggle component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "class-variance-authority",
         "radix-ui"
       ],
@@ -1136,7 +1136,7 @@
       "title": "Tooltip",
       "description": "Tooltip component, restyled with the Doodle UI theme.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "radix-ui"
       ],
       "files": [
@@ -1152,7 +1152,7 @@
       "title": "Doodle Chat Demo",
       "description": "Doodle Chat Demo block, composed with Doodle UI components.",
       "dependencies": [
-        "@kareem-ghorab/theme",
+        "@kareem-hany/theme",
         "lucide-react"
       ],
       "registryDependencies": [
