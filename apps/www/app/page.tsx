@@ -13,7 +13,7 @@ export default function Home() {
           </span>
           <span>
             Built on shadcn/ui · theme via{" "}
-            <code className="font-mono">@doodle-ui/theme</code>
+            <code className="font-mono">@kareem-ghorab/theme</code>
           </span>
         </div>
       </footer>

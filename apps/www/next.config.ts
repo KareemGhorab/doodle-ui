@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     root: monorepoRoot,
   },
   outputFileTracingRoot: monorepoRoot,
-  transpilePackages: ["@doodle-ui/theme"],
+  transpilePackages: ["@kareem-ghorab/theme"],
 };
 
 export default nextConfig;

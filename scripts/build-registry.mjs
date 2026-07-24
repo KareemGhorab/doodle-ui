@@ -21,7 +21,7 @@ const uiDir = join(registryRoot, "ui");
 const hooksDir = join(registryRoot, "hooks");
 const libDir = join(registryRoot, "lib");
 
-const THEME_PKG = "@doodle-ui/theme";
+const THEME_PKG = "@kareem-ghorab/theme";
 
 // Bare specifiers we never want to list as installable deps.
 const IGNORE_DEPS = new Set(["react", "react-dom", "next"]);
@@ -134,7 +134,7 @@ items.push({
   dependencies: [THEME_PKG],
   cssVars: { light, dark },
   css: {
-    "@import": "@doodle-ui/theme/styles.css",
+    "@import": "@kareem-ghorab/theme/styles.css",
   },
 });
 

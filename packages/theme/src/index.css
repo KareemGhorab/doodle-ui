@@ -1,9 +1,9 @@
 /*
- * @doodle-ui/theme — main stylesheet
+ * @kareem-ghorab/theme — main stylesheet
  *
  * Import this once in your app's global stylesheet:
  *
- *   @import "@doodle-ui/theme/styles.css";
+ *   @import "@kareem-ghorab/theme/styles.css";
  *
  * It pulls in the fonts, the light/dark design tokens, a Tailwind v4
  * `@theme inline` mapping (so `bg-primary`, `text-muted-foreground`, etc.
@@ -11,18 +11,18 @@
  * blob-radius utilities used by the forked shadcn components.
  *
  * The `@theme` / `@layer` blocks are Tailwind v4 features. If you are not on
- * Tailwind v4, import `@doodle-ui/theme/tokens.css` instead for just the raw
+ * Tailwind v4, import `@kareem-ghorab/theme/tokens.css` instead for just the raw
  * CSS variables.
  */
 
 /*
- * Fonts are shipped separately as `@doodle-ui/theme/fonts.css`. Import that
+ * Fonts are shipped separately as `@kareem-ghorab/theme/fonts.css`. Import that
  * file FIRST in your global stylesheet (before Tailwind) so the remote
  * @import is not flagged for ordering, e.g.:
  *
- *   @import "@doodle-ui/theme/fonts.css";
+ *   @import "@kareem-ghorab/theme/fonts.css";
  *   @import "tailwindcss";
- *   @import "@doodle-ui/theme/styles.css";
+ *   @import "@kareem-ghorab/theme/styles.css";
  */
 @import "./tokens.css";
 

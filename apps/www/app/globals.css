@@ -1,10 +1,10 @@
 /* Fonts first so the remote @import precedes all other rules. */
-@import "@doodle-ui/theme/fonts.css";
+@import "@kareem-ghorab/theme/fonts.css";
 @import "tailwindcss";
 @import "tw-animate-css";
 
 /* Doodle UI theme: light/dark tokens, @theme mapping, blob utilities. */
-@import "@doodle-ui/theme/styles.css";
+@import "@kareem-ghorab/theme/styles.css";
 
 /*
  * The forked components live at the monorepo root (registry/), outside this
