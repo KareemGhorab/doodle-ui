@@ -1145,6 +1145,30 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "doodle-chat-demo",
+      "type": "registry:block",
+      "title": "Doodle Chat Demo",
+      "description": "Doodle Chat Demo block, composed with Doodle UI components.",
+      "dependencies": [
+        "@kareem-ghorab/theme",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "attachment",
+        "avatar",
+        "bubble",
+        "marker",
+        "message",
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/blocks/doodle-chat-demo.tsx",
+          "type": "registry:block"
+        }
+      ]
     }
   ]
 }

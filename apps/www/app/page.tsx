@@ -1,5 +1,5 @@
-import { SiteHero } from "@/components/site-hero";
 import { Gallery } from "@/components/gallery";
+import { SiteHero } from "@/components/site-hero";
 
 export default function Home() {
   return (

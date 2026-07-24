@@ -59,7 +59,10 @@ Or add it manually in your `components.json`:
 ```bash
 npx shadcn@latest add @doodle-ui/doodle          # base style (light + dark tokens)
 npx shadcn@latest add @doodle-ui/button @doodle-ui/card @doodle-ui/input
+npx shadcn@latest add @doodle-ui/doodle-chat-demo  # composed chat conversation block
 ```
+
+Chat primitives (`message-scroller`, `message`, `bubble`, `attachment`, `marker`) are included in the full UI set and demoed on the docs site.
 
 ### Install straight from GitHub (no registry host)
 

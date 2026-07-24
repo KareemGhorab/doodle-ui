@@ -48,6 +48,7 @@ import { Input } from "@/registry/doodle/ui/input";
 import { Label } from "@/registry/doodle/ui/label";
 import { Progress } from "@/registry/doodle/ui/progress";
 import { RadioGroup, RadioGroupItem } from "@/registry/doodle/ui/radio-group";
+import { ChatGallery } from "@/components/chat-gallery";
 import {
     Select,
     SelectContent,
@@ -338,6 +339,8 @@ export function Gallery() {
             </Accordion>
           </div>
         </Section>
+
+        <ChatGallery />
       </div>
     </TooltipProvider>
   );

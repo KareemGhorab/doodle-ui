@@ -10,9 +10,9 @@
  * Also prepends the `doodle` style item that carries the light/dark theme and
  * depends on @doodle-ui/theme.
  */
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { dirname, resolve, join } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "..");
@@ -20,6 +20,7 @@ const registryRoot = join(root, "registry", "doodle");
 const uiDir = join(registryRoot, "ui");
 const hooksDir = join(registryRoot, "hooks");
 const libDir = join(registryRoot, "lib");
+const blocksDir = join(registryRoot, "blocks");
 
 const THEME_PKG = "@kareem-ghorab/theme";
 
@@ -58,6 +59,8 @@ function analyze(source) {
       registryDeps.add(spec.replace("@/registry/doodle/ui/", ""));
     } else if (spec.startsWith("@/registry/doodle/hooks/")) {
       registryDeps.add(spec.replace("@/registry/doodle/hooks/", ""));
+    } else if (spec.startsWith("@/registry/doodle/blocks/")) {
+      registryDeps.add(spec.replace("@/registry/doodle/blocks/", ""));
     } else if (spec.startsWith("@/registry/doodle/lib/")) {
       const name = spec.replace("@/registry/doodle/lib/", "");
       if (name !== "utils") registryDeps.add(name);
@@ -178,6 +181,29 @@ for (const file of readdirSync(uiDir).filter((f) => f.endsWith(".tsx")).sort()) 
   });
 }
 
+// --- block items ---
+if (existsSync(blocksDir)) {
+  for (const file of readdirSync(blocksDir)
+    .filter((f) => f.endsWith(".tsx"))
+    .sort()) {
+    const name = file.replace(/\.tsx$/, "");
+    const { deps, registryDeps } = analyze(
+      readFileSync(join(blocksDir, file), "utf8")
+    );
+    items.push({
+      name,
+      type: "registry:block",
+      title: titleFrom(name),
+      description: `${titleFrom(name)} block, composed with Doodle UI components.`,
+      ...(deps.length ? { dependencies: deps } : {}),
+      ...(registryDeps.length ? { registryDependencies: registryDeps } : {}),
+      files: [
+        { path: `registry/doodle/blocks/${file}`, type: "registry:block" },
+      ],
+    });
+  }
+}
+
 const registry = {
   $schema: "https://ui.shadcn.com/schema/registry.json",
   name: "doodle-ui",
@@ -195,5 +221,5 @@ console.log(
   `Wrote registry.json with ${items.length} items ` +
     `(1 style, ${readdirSync(libDir).length} lib, ${readdirSync(hooksDir).length} hook, ${
       items.filter((i) => i.type === "registry:ui").length
-    } ui).`
+    } ui, ${items.filter((i) => i.type === "registry:block").length} block).`
 );
