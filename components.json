@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "apps/www/app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@/registry/doodle",
+    "utils": "@/registry/doodle/lib/utils",
+    "ui": "@/registry/doodle/ui",
+    "lib": "@/registry/doodle/lib",
+    "hooks": "@/registry/doodle/hooks"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@doodle-ui/theme",
+  "version": "0.1.0",
+  "description": "Childish, hand-drawn design tokens for Doodle UI: light/dark CSS variables, Neucha + Cabin Sketch fonts, and the signature blob border-radius system for shadcn/ui.",
+  "keywords": [
+    "shadcn",
+    "theme",
+    "design-tokens",
+    "tailwind",
+    "doodle-ui",
+    "css-variables"
+  ],
+  "homepage": "https://github.com/KareemGhorab/doodle-ui/tree/main/packages/theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KareemGhorab/doodle-ui.git",
+    "directory": "packages/theme"
+  },
+  "license": "MIT",
+  "author": "Kareem Ghorab",
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "src"
+  ],
+  "exports": {
+    "./styles.css": "./src/index.css",
+    "./tokens.css": "./src/tokens.css",
+    "./fonts.css": "./src/fonts.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node ./scripts/check.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

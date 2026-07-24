@@ -1,0 +1,145 @@
+/*
+ * @doodle-ui/theme — main stylesheet
+ *
+ * Import this once in your app's global stylesheet:
+ *
+ *   @import "@doodle-ui/theme/styles.css";
+ *
+ * It pulls in the fonts, the light/dark design tokens, a Tailwind v4
+ * `@theme inline` mapping (so `bg-primary`, `text-muted-foreground`, etc.
+ * resolve to the doodle tokens), base element styles, and the signature
+ * blob-radius utilities used by the forked shadcn components.
+ *
+ * The `@theme` / `@layer` blocks are Tailwind v4 features. If you are not on
+ * Tailwind v4, import `@doodle-ui/theme/tokens.css` instead for just the raw
+ * CSS variables.
+ */
+
+/*
+ * Fonts are shipped separately as `@doodle-ui/theme/fonts.css`. Import that
+ * file FIRST in your global stylesheet (before Tailwind) so the remote
+ * @import is not flagged for ordering, e.g.:
+ *
+ *   @import "@doodle-ui/theme/fonts.css";
+ *   @import "tailwindcss";
+ *   @import "@doodle-ui/theme/styles.css";
+ */
+@import "./tokens.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-doodle-body);
+  --font-display: var(--font-doodle-display);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-doodle-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-display {
+    font-family: var(--font-doodle-display);
+    letter-spacing: 0.01em;
+  }
+}
+
+/*
+ * Signature blob-radius utilities.
+ * Authored outside @layer so they reliably win over Tailwind's `rounded-*`
+ * utilities regardless of layer ordering in the consuming app.
+ */
+.doodle-radius-button {
+  border-radius: var(--doodle-radius-button);
+}
+.doodle-radius-card {
+  border-radius: var(--doodle-radius-card);
+}
+.doodle-radius-input {
+  border-radius: var(--doodle-radius-input);
+}
+.doodle-radius-modal {
+  border-radius: var(--doodle-radius-modal);
+}
+.doodle-radius-nav {
+  border-radius: var(--doodle-radius-nav);
+}
+.doodle-radius-media {
+  border-radius: var(--doodle-radius-media);
+}
+.doodle-radius-popover {
+  border-radius: var(--doodle-radius-popover);
+}
+.doodle-radius-pill {
+  border-radius: var(--doodle-radius-pill);
+}
+.doodle-radius-badge {
+  border-radius: var(--doodle-radius-badge);
+}
+.doodle-radius-avatar {
+  border-radius: var(--doodle-radius-avatar);
+}
+
+/* Chalky focus glow, matching the original theme's 5px halo. */
+.doodle-focus-glow:focus-visible {
+  outline: none;
+  box-shadow: var(--doodle-focus-glow);
+}

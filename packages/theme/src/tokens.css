@@ -1,0 +1,135 @@
+/*
+ * Doodle UI design tokens
+ * Framework-agnostic CSS custom properties (no Tailwind required).
+ *
+ * Colors map onto the shadcn/ui token contract so the same variables drive
+ * both the theme package and the forked components. Light mode reproduces the
+ * original "Sooshial Medea" palette (white ground, near-black ink, gray muted,
+ * chalky focus glow); dark mode inverts it into a chalk-on-slate look.
+ *
+ * The blob radius tokens are the signature of the theme and are identical in
+ * both modes — they describe organic, hand-drawn corners per surface type.
+ */
+
+:root {
+  /* --- Core surface + text --- */
+  --background: #ffffff;
+  --foreground: #333333;
+
+  --card: #ffffff;
+  --card-foreground: #333333;
+
+  --popover: #ffffff;
+  --popover-foreground: #333333;
+
+  /* --- Intent colors --- */
+  --primary: #333333;
+  --primary-foreground: #ffffff;
+
+  --secondary: #e5e5e5;
+  --secondary-foreground: #333333;
+
+  --muted: #f0efef;
+  --muted-foreground: #6b6b6b;
+
+  --accent: #e5e5e5;
+  --accent-foreground: #333333;
+
+  --destructive: #d64545;
+  --destructive-foreground: #ffffff;
+
+  /* --- Lines + focus --- */
+  /* Heavy, hand-drawn ink outlines are core to the look. */
+  --border: #333333;
+  --input: #333333;
+  /* The chalky focus glow from the original theme: rgba(212,208,212,1). */
+  --ring: #d4d0d4;
+
+  /* --- Charts --- */
+  --chart-1: #333333;
+  --chart-2: #6b6b6b;
+  --chart-3: #d64545;
+  --chart-4: #9a9a9a;
+  --chart-5: #b8b8b8;
+
+  /* --- Sidebar --- */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #333333;
+  --sidebar-primary: #333333;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5e5e5;
+  --sidebar-accent-foreground: #333333;
+  --sidebar-border: #333333;
+  --sidebar-ring: #d4d0d4;
+
+  /* --- Base radius fallback (used when a blob token is not applied) --- */
+  --radius: 0.5rem;
+
+  /* ---------------------------------------------------------------- */
+  /* Signature blob radii (mode-agnostic)                             */
+  /* ---------------------------------------------------------------- */
+  --doodle-radius-button: 12% 8% 4% 59% / 0% 14% 100% 10%;
+  --doodle-radius-card: 24% 6% 12% 0% / 8% 21% 17% 10%;
+  --doodle-radius-input: 70% 0% 6% 10% / 5% 0% 14% 10%;
+  --doodle-radius-modal: 0% 100% 0% 10% / 0% 6% 0% 14%;
+  --doodle-radius-nav: 0% 0% 22% 0% / 0% 0% 19% 0%;
+  --doodle-radius-media: 14% 0% 2% 0% / 2% 0% 48% 0%;
+  --doodle-radius-popover: 8% 22% 6% 20% / 20% 6% 24% 8%;
+  --doodle-radius-pill: 45% 55% 40% 60% / 55% 45% 55% 45%;
+  --doodle-radius-badge: 40% 12% 44% 10% / 20% 44% 12% 40%;
+  --doodle-radius-avatar: 62% 38% 46% 54% / 54% 44% 56% 46%;
+
+  /* The chalky focus glow, ready to drop into box-shadow. */
+  --doodle-focus-glow: 0 0 0 5px var(--ring);
+
+  /* Font families (families are provided by fonts.css). */
+  --font-doodle-body: "Neucha", ui-rounded, "Comic Sans MS", cursive, sans-serif;
+  --font-doodle-display: "Cabin Sketch", "Neucha", ui-rounded, cursive,
+    sans-serif;
+}
+
+.dark {
+  --background: #1c1b1f;
+  --foreground: #f2f0f0;
+
+  --card: #242329;
+  --card-foreground: #f2f0f0;
+
+  --popover: #242329;
+  --popover-foreground: #f2f0f0;
+
+  --primary: #f5f5f5;
+  --primary-foreground: #1c1b1f;
+
+  --secondary: #2c2b31;
+  --secondary-foreground: #f2f0f0;
+
+  --muted: #2c2b31;
+  --muted-foreground: #a8a5ad;
+
+  --accent: #34333a;
+  --accent-foreground: #f2f0f0;
+
+  --destructive: #e2686b;
+  --destructive-foreground: #1c1b1f;
+
+  /* Chalk-white outlines on the dark slate. */
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #5a5860;
+
+  --chart-1: #f5f5f5;
+  --chart-2: #a8a5ad;
+  --chart-3: #e2686b;
+  --chart-4: #7c7a82;
+  --chart-5: #555359;
+
+  --sidebar: #242329;
+  --sidebar-foreground: #f2f0f0;
+  --sidebar-primary: #f5f5f5;
+  --sidebar-primary-foreground: #1c1b1f;
+  --sidebar-accent: #34333a;
+  --sidebar-accent-foreground: #f2f0f0;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #5a5860;
+}

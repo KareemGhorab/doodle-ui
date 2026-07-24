@@ -1,0 +1,1150 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "doodle-ui",
+  "homepage": "https://doodle-ui.vercel.app",
+  "items": [
+    {
+      "name": "doodle",
+      "type": "registry:style",
+      "title": "Doodle",
+      "description": "The Doodle UI base style: childish, hand-drawn theme with light and dark tokens, Neucha + Cabin Sketch fonts, and the signature blob border-radius system.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "cssVars": {
+        "light": {
+          "background": "#ffffff",
+          "foreground": "#333333",
+          "card": "#ffffff",
+          "card-foreground": "#333333",
+          "popover": "#ffffff",
+          "popover-foreground": "#333333",
+          "primary": "#333333",
+          "primary-foreground": "#ffffff",
+          "secondary": "#e5e5e5",
+          "secondary-foreground": "#333333",
+          "muted": "#f0efef",
+          "muted-foreground": "#6b6b6b",
+          "accent": "#e5e5e5",
+          "accent-foreground": "#333333",
+          "destructive": "#d64545",
+          "destructive-foreground": "#ffffff",
+          "border": "#333333",
+          "input": "#333333",
+          "ring": "#d4d0d4",
+          "radius": "0.5rem"
+        },
+        "dark": {
+          "background": "#1c1b1f",
+          "foreground": "#f2f0f0",
+          "card": "#242329",
+          "card-foreground": "#f2f0f0",
+          "popover": "#242329",
+          "popover-foreground": "#f2f0f0",
+          "primary": "#f5f5f5",
+          "primary-foreground": "#1c1b1f",
+          "secondary": "#2c2b31",
+          "secondary-foreground": "#f2f0f0",
+          "muted": "#2c2b31",
+          "muted-foreground": "#a8a5ad",
+          "accent": "#34333a",
+          "accent-foreground": "#f2f0f0",
+          "destructive": "#e2686b",
+          "destructive-foreground": "#1c1b1f",
+          "border": "#e5e5e5",
+          "input": "#e5e5e5",
+          "ring": "#5a5860"
+        }
+      },
+      "css": {
+        "@import": "@doodle-ui/theme/styles.css"
+      }
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "files": [
+        {
+          "path": "registry/doodle/lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "Use Mobile",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/hooks/use-mobile.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Accordion component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "Alert Dialog component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Alert component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "Aspect Ratio component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/aspect-ratio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "type": "registry:ui",
+      "title": "Attachment",
+      "description": "Attachment component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/attachment.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "Avatar component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Badge component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Breadcrumb component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bubble",
+      "type": "registry:ui",
+      "title": "Bubble",
+      "description": "Bubble component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/bubble.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "Button Group component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/button-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Button component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "Calendar component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Card component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "Carousel component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "embla-carousel-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/carousel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "Chart component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/chart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Checkbox component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "Collapsible component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "Combobox component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@base-ui/react",
+        "@doodle-ui/theme",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/combobox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "Command component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "dialog"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "Context Menu component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Dialog component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "title": "Direction",
+      "description": "Direction component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/direction.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "Drawer component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "vaul"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/drawer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Dropdown Menu component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "Empty component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/empty.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "Field component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "description": "Form component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui",
+        "react-hook-form"
+      ],
+      "registryDependencies": [
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/form.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "Hover Card component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "Input Group component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input Otp",
+      "description": "Input Otp component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "input-otp",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/input-otp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Input component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "description": "Item component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/item.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "Kbd component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/kbd.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Label component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "marker",
+      "type": "registry:ui",
+      "title": "Marker",
+      "description": "Marker component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/marker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "Menubar component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "title": "Message Scroller",
+      "description": "Message Scroller component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/message-scroller.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "registry:ui",
+      "title": "Message",
+      "description": "Message component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/message.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "description": "Native Select component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/native-select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "Navigation Menu component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Pagination component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Popover component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Progress component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "Radio Group component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "Resizable component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "react-resizable-panels"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/resizable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Scroll Area component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Select component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Separator component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "Sheet component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "Sidebar component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "separator",
+        "sheet",
+        "skeleton",
+        "tooltip",
+        "use-mobile"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/sidebar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Skeleton component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Slider component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "Sonner component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react",
+        "next-themes",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "Spinner component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/spinner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Switch component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Table component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Tabs component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Textarea component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "Toggle Group component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "Toggle component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Tooltip component, restyled with the Doodle UI theme.",
+      "dependencies": [
+        "@doodle-ui/theme",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/doodle/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
